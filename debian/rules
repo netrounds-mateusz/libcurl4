@@ -17,6 +17,7 @@ CONFIGURE_ARGS = -- --disable-dependency-tracking		\
 	--enable-threaded-resolver --with-lber-lib=lber		\
 	--with-gssapi=/usr --with-libssh2 --with-nghttp2	\
 	--includedir=/usr/include/$(DEB_HOST_MULTIARCH)		\
+	--enable-ares						\
 	--with-zsh-functions-dir=/usr/share/zsh/vendor-completions
 
 # disable libssh2 on Ubuntu (see #888449)
